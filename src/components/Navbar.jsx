@@ -5,7 +5,7 @@ import A from '/A.jpg'
 import { NavLink } from 'react-router-dom'
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
-import Ayush_Resume from '../../public/Ayush_Namdhar_M.pdf'
+import Ayush_Resume from '/Ayush_Namdhar_M.pdf'
 
 function Navbar() {
 
@@ -53,7 +53,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="col-2 third" >
-                            <NavLink download={Ayush_Resume} style={{ textDecoration: 'none' }} to={Ayush_Resume} target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></NavLink>
+                            <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar_M.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
                         </div>
                     </div>
                 </div>
