@@ -53,7 +53,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="col-2 third" >
-                            <NavLink download='Ayush_Namdhar' style={{ textDecoration: 'none' }} to={Ayush_Resume} target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></NavLink>
+                            <NavLink download={Ayush_Resume} style={{ textDecoration: 'none' }} to={Ayush_Resume} target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></NavLink>
                         </div>
                     </div>
                 </div>
