@@ -1,0 +1,53 @@
+.custom_form input[type='text'],
+.custom_form input[type='email'],
+textarea {
+    border-radius: 5px;
+    padding: 13px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.658);
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom_form input[type='text']:focus,
+.custom_form input[type='email']:focus,
+textarea:focus {
+    border: 2px solid blue;
+}
+
+.custom_form .label {
+    font-weight: 640;
+}
+
+.custom_form .checkBox1 input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.custom_form p {
+    font-size: 13px;
+}
+
+.custom_form p span {
+    color: rgb(85, 85, 240);
+    font-weight: 650;
+}
+.custom_form button{
+    padding: 10px;
+    width: 100%;
+    font-weight: 650;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+.custom_form button:hover{
+    color: black;
+    transition: all 0.4s linear;
+    background-color: transparent;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.163);
+}
+.custom_form span{
+    color: red;
+}

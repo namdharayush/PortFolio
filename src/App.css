@@ -1,0 +1,10 @@
+body{
+    overflow-x: hidden;
+    background-image: radial-gradient(circle closest-side, #3a0b61, #2f043d);
+    background-attachment: fixed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

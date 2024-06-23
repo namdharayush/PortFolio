@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.homepage {
+    height: max-content;
+    position: relative;
+    color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+
+.homepage .overlay_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: max-content;
+    height: max-content;
+}
+
+.homepage .overlay_text h1 {
+    font-size: 200px;
+    padding: 0;
+    font-weight: 750;
+    -webkit-text-stroke: 5px rgba(255, 255, 255, 0.202);
+    color: transparent;
+    opacity: 0.1;
+
+}
+
+.homepage .container {
+    height: 600px;
+}
+
+.homepage .main_text {
+    position: relative;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+}
+
+.homepage .main_text .ayush_text {
+    font-size: 34px;
+    font-weight: 650;
+    background-image: -webkit-linear-gradient(45deg, #d60aff 29%, #4400ff 56%, #7e0dff 55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.main_text .child_text h2 {
+    margin-top: 30px;
+    position: relative;
+    font-size: 80px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-clip: text;
+    background-image: url('https://th.bing.com/th/id/OIP.PBvjK6_8tq7TCvQdb3y_mwHaEo?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-repeat: repeat;
+    background-size: 100% 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(255, 255, 255, 0.202);
+    letter-spacing: 8px;
+}
+
+
+.main_text .child_text h2::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 2px);
+    width: 100%;
+    height: 4px;
+}
+
+.main_text .child_text h2 span {
+    background-image: url('https://th.bing.com/th/id/OIP.PBvjK6_8tq7TCvQdb3y_mwHaEo?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-repeat: repeat;
+    background-size: 100% 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: end;
+    animation: clip-path-reveal-1 2.5s ease infinite alternate;
+}
+
+@keyframes clip-path-reveal-1 {
+
+    0%,
+    25% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.homepage .main_text .main_icons {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+}
+
+.homepage .main_icons div {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.279);
+    padding: 12px;
+    margin: 15px 10px;
+    border-radius: 100%;
+    line-height: 100%;
+}
+
+.homepage .main_text .main_icons .icon {
+    font-size: 26px;
+    color: #9f3af2;
+}
+
+.homepage .main_text .main_icons div:hover {
+    background-color: #d60aff;
+    transition: all 0.5s linear;
+}
+
+.homepage .main_text .main_icons div:hover .icon {
+    color: white;
+    transition: all 0.5s linear;
+    transform: rotate(360deg);
+}
+
+
+.scroller {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroller .icon {
+    font-size: 40px;
+    background-color: transparent;
+    padding: 7px;
+    color: rgb(191, 0, 255);
+    border: 2px solid rgba(217, 0, 255, 0.69);
+    border-radius: 10px;
+}
+
+
+
+@media (max-width:991.98px) {
+    .homepage .overlay_text h1 {
+        font-size: 150px;
+        opacity: 0.08;
+
+    }
+
+    .main_text .child_text h2 {
+        font-size: 70px;
+        letter-spacing: 7px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .homepage .overlay_text h1 {
+        font-size: 100px;
+        opacity: 0.08;
+
+    }
+
+    .main_text .child_text h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .homepage .overlay_text h1 {
+        font-size: 50px;
+        opacity: 0.08;
+
+    }
+
+    .main_text .child_text h2 {
+        width: max-content;
+        margin: auto;
+        font-size: 30px;
+    }
+
+    .homepage .main_text .main_icons {
+        display: flex;
+        width: max-content;
+        margin: auto;
+        align-items: center;
+    }
+
+    .homepage .main_text .main_icons .icon {
+        font-size: 18px;
+        color: #9f3af2;
+    }
+}

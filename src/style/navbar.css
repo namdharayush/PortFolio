@@ -1,0 +1,330 @@
+.custom_navbar {
+    width: 100%;
+    background-color: #2f043d;
+    height: 100px;
+    overflow: hidden;
+}
+
+.media_custom_navbar {
+    display: none;
+}
+.full_menu_width{
+    display: none;
+}
+
+.bg {
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(183, 0, 255);
+    z-index: 20;
+}
+
+.bg img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+}
+
+.custom_navbar .col-5,
+.custom_navbar .col-2 {
+    height: 100px;
+}
+
+.custom_navbar .first {
+    position: relative;
+    background-color: transparent;
+}
+
+/* .custom_navbar .first::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #2f043d;
+    top: 20%;
+    border-radius: 0 15px 0 0;
+    left: 0;
+} */
+
+.custom_navbar .second {
+    position: relative;
+    background-color: transparent;
+    border-radius: 0 0 15px 15px;
+    height: 100px;
+}
+
+.custom_navbar .second::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius: 0 0 15px 15px;
+    height: 80px;
+    width: 100%;
+    left: 0;
+}
+
+.custom_navbar .third {
+    position: relative;
+    background-color: black;
+}
+
+.custom_navbar .third::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #2f043d;
+    top: 20%;
+    border-radius: 15px 0 0 0;
+    left: 0;
+}
+
+.custom_navbar .second .left_text_navbar {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: red; */
+    color: white;
+}
+
+.custom_navbar .second .left_text_navbar h4 {
+    font-size: clamp(16px, 5vw, 18px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #d60aff;
+    background-image: -webkit-linear-gradient(45deg, #d60aff 29%, #4400ff 56%, #7e0dff 55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.custom_navbar .second .left_text_navbar h4:hover {
+    background-image: -webkit-linear-gradient(235deg, #d60aff 29%, #a553bc 56%, #fb0dff 55%);
+    cursor: pointer;
+}
+
+.custom_navbar .second .left_text_navbar h4:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    animation-name: hover_button_before;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.custom_navbar .second .left_text_navbar h4:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    animation-name: hover_button_before;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover_button_before {
+    0% {
+        width: 0%;
+        background-color: rgb(0, 102, 255);
+    }
+
+    50% {
+        width: 50%;
+        background-color: rgb(104, 3, 255);
+    }
+
+    100% {
+        width: 100%;
+        background-color: rgba(170, 0, 255, 0.79);
+    }
+}
+
+.custom_navbar .third button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 85%;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 650;
+    color: rgb(170, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.23);
+}
+
+.custom_navbar .third button .download_icon {
+    font-size: 28px;
+    margin-left: 7px;
+    color: white;
+}
+
+.custom_navbar .third button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s linear;
+}
+
+.custom_navbar .third button:hover .download_icon {
+    position: relative;
+    color: rgb(170, 0, 255);
+    animation-name: download_icon_animate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes download_icon_animate {
+    0% {
+        top: 3px;
+    }
+
+    100% {
+        top: -3px;
+
+    }
+}
+
+
+@media (max-width:991.98px) {
+    .custom_navbar {
+        display: none;
+    }
+
+    .media_custom_navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        display: block;
+        padding: 15px 30px;
+        background-image: linear-gradient(#3a0b61, #2f043d);
+        z-index: 100;
+    }
+
+    .media_bg {
+        width: 70px;
+        position: relative;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgb(183, 0, 255);
+        z-index: 20;
+    }
+
+    .media_bg img {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        mix-blend-mode: multiply;
+        border-radius: 50%;
+    }
+
+    .flex_item_navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .media_custom_navbar .menu_icon {
+        color: white;
+        font-size: 40px;
+    }
+
+    .full_menu_width {
+        position: fixed;
+        z-index: 101;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        transition: all 0.8s linear;
+        background-color: white;
+
+    }
+    .close_button {
+        text-align: end;
+        padding: 25px 30px;
+    }
+
+    .close_button .close_icon {
+        font-size: 50px;
+    }
+
+    .close_full_menu {
+        left: -100%;
+        transition: all 0.8s linear;
+    }
+    .close_width_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .close_width_content .link{
+        padding: 20px 24px;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 750;
+    }
+    .close_width_content .link:focus{
+        background-color: black !important;
+        color: white;
+        transition: all 0.3s linear;
+    }
+
+    .close_width_content .third button {
+        z-index: 1;
+        width: 100%;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        font-weight: 650;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: rgb(208, 0, 255);
+    }
+    
+    .close_width_content .third button .download_icon {
+        font-size: 28px;
+        margin-left: 7px;
+        color: black;
+    }
+
+    
+    .close_width_content .third button:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.5s linear;
+    }
+    
+    .close_width_content .third button:hover  .download_icon{
+        color: white;
+    }
+    
+   
+}
