@@ -80,8 +80,8 @@ function Navbar() {
                     <h4 onClick={() => scrollToSection('projects')} className='link'>Work</h4>
                     <h4 onClick={() => scrollToSection('contact')} className='link'>Contact Us</h4>
                     <div className="third" >
-                            <NavLink download='Ayush_Namdhar' style={{ textDecoration: 'none' }} to={Ayush_Resume} target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></NavLink>
-                        </div>
+                        <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar_M.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
+                    </div>
                 </div>
             </div>
 
