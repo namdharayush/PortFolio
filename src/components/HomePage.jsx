@@ -66,7 +66,7 @@ function HomePage() {
                             </div>
                             <div className='main_icons'>
                                 <div>
-                                    <NavLink to='https://www.linkedin.com/in/ayush-namdhar-8ba009216/' target='_blank'>
+                                    <NavLink to='https://www.linkedin.com/in/ayush-namdhar/' target='_blank'>
                                         <FaLinkedinIn className='icon' />
                                     </NavLink>
                                 </div>

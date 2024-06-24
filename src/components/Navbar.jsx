@@ -5,7 +5,6 @@ import A from '/A.jpg'
 import { NavLink } from 'react-router-dom'
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
-import Ayush_Resume from '/Ayush_Namdhar_M.pdf'
 
 function Navbar() {
 
@@ -53,7 +52,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="col-2 third" >
-                            <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar_M.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
+                            <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +79,7 @@ function Navbar() {
                     <h4 onClick={() => scrollToSection('projects')} className='link'>Work</h4>
                     <h4 onClick={() => scrollToSection('contact')} className='link'>Contact Us</h4>
                     <div className="third" >
-                        <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar_M.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
+                        <a download style={{ textDecoration: 'none' }} href='/Ayush_Namdhar.pdf' target='_blank'><button className='btn'>Resume<MdDownloading className='download_icon' /></button></a>
                     </div>
                 </div>
             </div>
