@@ -30,7 +30,7 @@ const PROJECT_DATA = [
         title: 'Suraj Metal',
         description: ['This is a Freelancing project based on <b>Metal Industries & Corporation.</b>'],
         techStack: ['React.js','Email.js'],
-        github: 'https://github.com/techwithayush/SurajMetal',
+        github: '',
         liveSite: 'https://surajmetal.netlify.app/',
         freelancing : true
     },
