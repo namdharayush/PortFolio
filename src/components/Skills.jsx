@@ -6,6 +6,7 @@ import javascript from '/javascript.png'
 import bootstrap from '/bootstrap.png'
 import react from '/react.svg'
 import jquery from '/jquery.png'
+import sass from '/sass.png'
 import python from '/python.png'
 import django from '/django.png'
 import node from '/node.jpg'
@@ -55,6 +56,7 @@ function Skills() {
             <img src={react} alt="Image Not Found!" />
             <img src={redux} alt="Image Not Found!" />
             <img src={jquery} alt="Image Not Found!" />
+            <img src={sass}  alt="Image Not Found!" />
           </div>
           <div className='skills_data_back mt-5' style={{ display: back ? '' : 'none' }}>
             <img src={python} alt="Image Not Found!" />
