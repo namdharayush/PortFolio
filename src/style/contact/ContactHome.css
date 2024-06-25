@@ -35,6 +35,7 @@ body {
     line-height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: transparent;
     border: 1px solid rgba(97, 97, 97, 0.258);
 }
@@ -218,14 +219,15 @@ body {
 
 
     .meeting_book_text {
-        width: 60%;
+        width: 100%;
         font-size: 13px;
         margin: auto;
     }
 
     .react-calendar2 {
         margin: auto;
-        width: 80% !important;
+        padding: 0;
+        width: 100% !important;
     }
 
     .react-calendar1 {
