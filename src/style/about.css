@@ -41,6 +41,15 @@
     color: white;
 }
 
+.about .about_box .text_content span{
+    background-image: -webkit-linear-gradient(45deg, #d60aff 29%, #4400ff 56%, #7e0dff 55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 750;
+    font-style: italic;
+}
+
 .about .about_box .text_content h4 {
     font-size: 20px;
     line-height: 27px;
