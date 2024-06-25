@@ -13,6 +13,7 @@ const PROJECT_DATA = [
         github: 'https://github.com/namdharayush/E-Commerce',
         liveSite: '',
         freelancing : false,
+        data : 'fade-right'
     },
     {
         id: 2,
@@ -22,7 +23,8 @@ const PROJECT_DATA = [
         techStack: ['Python', 'Django', 'SQL', 'Reddis'],
         github: '',
         liveSite: '',
-        freelancing : true
+        freelancing : true,
+        data : 'fade-down'
     },
     {
         id: 3,
@@ -32,7 +34,8 @@ const PROJECT_DATA = [
         techStack: ['React.js','Email.js'],
         github: '',
         liveSite: 'https://surajmetal.netlify.app/',
-        freelancing : true
+        freelancing : true,
+        data : 'fade-left'
     },
     {
         id: 4,
@@ -42,7 +45,8 @@ const PROJECT_DATA = [
         techStack: ['React.js','Node.js','Express.js'],
         github: 'https://github.com/namdharayush/dummy_api',
         liveSite: 'https://dummy-api-json.netlify.app/',
-        freelancing : false
+        freelancing : false,
+        data : 'fade-right'
     },
 ]
 
@@ -53,13 +57,13 @@ function Projects() {
     return (
         <div className='projects' id='projects'>
             <div className="container-xl">
-                <h2 className='h2'>My Works</h2>
+                <h2 className='h2' ata-aos='fade-down'  data-aos-duration='2000'>My Works</h2>
                 <div className='project_box'>
                     <div className="row gy-4" >
                         {
                             PROJECT_DATA && PROJECT_DATA.map((val) => {
                                 return (
-                                    <div className="col-sm-6 col-lg-4" key={val.id}>
+                                    <div className="col-sm-6 col-lg-4" data-aos={val.data}  data-aos-duration='2000'  key={val.id}>
                                         <ProjectItem val={val} data = {PROJECT_DATA} />
                                     </div>
                                 )

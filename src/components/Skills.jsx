@@ -40,7 +40,7 @@ function Skills() {
   return (
     <div className='skills' id='skills'>
       <div className="container-lg">
-        <h2>Skills</h2>
+        <h2 data-aos='fade-down' data-aos-duration='2000'>Skills</h2>
         <div className="skills_box mt-5">
           <div className='skills_navbar'>
             <h4 onClick={handleClickFront} className={`${front ? 'active' : ''}`}>Front-End</h4>
@@ -48,25 +48,25 @@ function Skills() {
             <h4 onClick={handleClickData} className={`${database ? 'active' : ''}`}>Database</h4>
           </div>
           <div className='skills_data_front mt-5' style={{ display: front ? '' : 'none' }}>
-            <img src={html5} alt="Image Not Found!" />
-            <img src={css} alt="Image Not Found!" />
-            <img src={javascript} alt="Image Not Found!" />
+            <img data-aos='fade-right' data-aos-duration='2000' src={html5} alt="Image Not Found!" />
+            <img data-aos='fade-left' data-aos-duration='2000' src={css} alt="Image Not Found!" />
+            <img data-aos='fade-down' data-aos-duration='2000' src={javascript} alt="Image Not Found!" />
             <img src={bootstrap} alt="Image Not Found!" />
             {/* <br /> */}
-            <img src={react} alt="Image Not Found!" />
-            <img src={redux} alt="Image Not Found!" />
-            <img src={jquery} alt="Image Not Found!" />
-            <img src={sass}  alt="Image Not Found!" />
+            <img data-aos='fade-up' data-aos-duration='2000' src={react} alt="Image Not Found!" />
+            <img data-aos='fade-right' data-aos-duration='2000' src={redux} alt="Image Not Found!" />
+            <img data-aos='fade-down' data-aos-duration='2000' src={jquery} alt="Image Not Found!" />
+            <img data-aos='fade-up' data-aos-duration='2000' src={sass}  alt="Image Not Found!" />
           </div>
           <div className='skills_data_back mt-5' style={{ display: back ? '' : 'none' }}>
-            <img src={python} alt="Image Not Found!" />
-            <img src={django} alt="Image Not Found!" />
-            <img src={node} alt="Image Not Found!" />
+            <img data-aos='fade-right' data-aos-duration='2000' src={python} alt="Image Not Found!" />
+            <img data-aos='fade-down' data-aos-duration='2000' src={django} alt="Image Not Found!" />
+            <img data-aos='fade-up' data-aos-duration='2000' src={node} alt="Image Not Found!" />
           </div>
           <div className='skills_data_base mt-5' style={{ display: database ? '' : 'none' }}>
-            <img src={sql} alt="Image Not Found!" />
-            <img src={mongo} alt="Image Not Found!" />
-            <img style={{backgroundColor:'white',padding:'0 10px'}} src={postgresql} alt="Image Not Found!" />
+            <img data-aos='fade-right' data-aos-duration='2000' src={sql} alt="Image Not Found!" />
+            <img data-aos='fade-down' data-aos-duration='2000' src={mongo} alt="Image Not Found!" />
+            <img data-aos='fade-up' data-aos-duration='2000' style={{backgroundColor:'white',padding:'0 10px'}} src={postgresql} alt="Image Not Found!" />
           </div>
         </div>
       </div>

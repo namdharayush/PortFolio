@@ -4,10 +4,10 @@ import ContactHome from './ContactHome'
 
 function Contact() {
   return (
-    <div className='contact_home' id='contact'>
-        <div className="container">
-            <h2 className='h2'>Lets Connect</h2>
-            <div className=''>
+    <div className='contact_home'    id='contact'>
+        <div className="container" >
+            <h2 className='h2' data-aos='fade-down' data-aos-duration='2000'>Lets Connect</h2>
+            <div className='' data-aos='fade-right' data-aos-duration='2000'>
                 <ContactHome />
             </div>
         </div>

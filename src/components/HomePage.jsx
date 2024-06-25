@@ -9,6 +9,7 @@ import Projects from './Projects';
 import ContactHome from './Contact/ContactHome';
 import Contact from './Contact/Contact';
 import { FaArrowUp } from "react-icons/fa";
+import Aos from 'aos';
 
 
 function HomePage() {
@@ -50,6 +51,10 @@ function HomePage() {
         })
     }
 
+    useEffect(()=>{
+        Aos.init();
+    },[])
+
     return (
         <Fragment>
             <div style={{overflowX : 'hidden'}}>
@@ -59,28 +64,28 @@ function HomePage() {
                         <h1>Hello !</h1>
                     </div>
                     <div className="container">
-                        <div className="main_text">
-                            <h4>I am <span className='ayush_text'>Ayush Namdhar</span></h4>
-                            <div className='child_text'>
-                                <h2><span>{changeText}</span> Developer</h2>
+                        <div className="main_text" >
+                            <h4 data-aos='fade-down' data-aos-duration='1500'>I am <span className='ayush_text'>Ayush Namdhar</span></h4>
+                            <div className='child_text' >
+                                <h2 data-aos='fade-up' data-aos-duration='1500'><span >{changeText}</span> Developer</h2>
                             </div>
                             <div className='main_icons'>
-                                <div>
+                                <div data-aos='fade-right' data-aos-duration='2000'>
                                     <NavLink to='https://www.linkedin.com/in/ayush-namdhar/' target='_blank'>
                                         <FaLinkedinIn className='icon' />
                                     </NavLink>
                                 </div>
-                                <div>
+                                <div data-aos='fade-up' data-aos-duration='2000'>
                                     <NavLink to='https://github.com/namdharayush' target='_blank'>
                                         <FaGithub className='icon' />
                                     </NavLink>
                                 </div>
-                                <div>
+                                <div data-aos='fade-down' data-aos-duration='2000'>
                                     <NavLink to='mailto:ayushnamdhar27@gmail.com' target='_blank'>
                                         <MdMarkEmailRead className='icon' />
                                     </NavLink>
                                 </div>
-                                <div>
+                                <div data-aos='fade-left' data-aos-duration='2000'>
                                     <NavLink to='https://wa.me/+918200172854' target='_blank'>
                                         <FaWhatsapp className='icon' />
                                     </NavLink>
@@ -92,13 +97,14 @@ function HomePage() {
                 <div className='scroller' style={{ display: !scroll ? 'none' : '' }} onClick={handleScroll}>
                     <FaArrowUp className='icon' />
                 </div>
-                <About />
+                <About  />
                 <Skills />
                 <Projects />
                 <Contact />
 
             </div>
         </Fragment>
+       
     )
 }
 
